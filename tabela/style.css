@@ -1,0 +1,193 @@
+/* configurações globais*/
+
+* {
+  font-family: Arial;
+}
+
+:root {
+  --borda-tabela: #DDDDDD;
+  --titulo-colunas: #999999;
+  --cor-padrao: #666666;
+  --pontos: #000000;
+  --libertadores: #003366;
+  --pre-libertadores: #1398BE;
+  --sul-americana: #DE9800;
+  --rebaixados: #C91B04;
+  --indefinidos: #CCCCCC;
+  --legenda-classificacao: #8F8F8F;
+  --legenda-siglas-significado: #555555;
+  --cor-fundo-colunas-pares: #F7F7F7;
+}
+
+
+table, tr, td {
+  border: 1px solid var(--borda-tabela);
+  border-collapse: collapse;
+}
+
+body { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+
+}
+
+table {
+  width: 600px;
+  margin: 0 auto;
+}
+
+td:nth-child(even){
+  background-color: var(--cor-fundo-colunas-pares);
+}
+
+/* configurações aplicadas na primeira linha da tabela */
+
+#titulo-colunas { 
+  font-size: 13px;
+  color: var(--titulo-colunas);
+  font-weight: bold;
+  text-align: center;
+}
+
+.primeira-linha {
+  border: none;
+}
+
+.colunas-pontos {
+  width: 30px;
+ }
+ 
+ #coluna-porcentagem {
+   width: 50px;
+ }
+
+ /*configurações borda aplicadas entre 4º e 5º time / 16º e 17º time*/
+
+ .borda-diferente {
+  border-bottom-width: 2px;
+  border-bottom-color: var(--indefinidos);
+}
+
+
+ /* primeira coluna da tabela: número e nome dos times */
+
+ .formatacao-numero-times {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 10px;
+ }
+
+.libertadores {
+  color:  var(--libertadores);
+}
+
+#pre-libertadores {
+  color:  var(--pre-libertadores);
+}
+
+.pre-sul-americana {
+  color: var(--sul-americana);
+}
+
+.rebaixados {
+  color: var(--rebaixados);
+  text-align: center;
+}
+
+.indefinidos {
+ color: var(--indefinidos);
+}
+
+.times {
+  font-size: 14px;
+  color: var(--cor-padrao);
+  font-weight: bold;
+  text-align: left;
+  width: 150px;
+  height: 25px;
+  padding-left: 10px;
+}
+
+/* segunda coluna: PONTOS */
+
+.pontos {
+  font-size: 14px;
+  color: var(--pontos);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* configurações aplicadas ao restante das colunas */
+
+td {
+  font-size: 14px;
+  color: var(--cor-padrao);
+  font-weight: normal;
+  text-align: center;
+}
+
+/* legenda */
+
+caption{
+  caption-side: bottom;
+  border: 1px solid var(--table-border);
+  padding: 5px;
+}
+
+.legenda-blocos{
+  text-align: left;
+}
+
+.quadrados {
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  display: inline-block;
+}
+
+#quadrado-libertadores {
+  background-color: var(--libertadores);
+}
+
+#quadrado-pre-libertadores {
+  background-color: var(--pre-libertadores);
+  margin-left: 5px;
+}
+
+#quadrado-sul-americana {
+  background-color: var(--sul-americana);
+  margin-left: 5px;
+}
+
+#quadrado-rebaixados {
+  background-color: var(--rebaixados);
+  margin-left: 5px;
+}
+
+.legenda-classificacao {
+ font-size: 10px;
+ color: var(--legenda-classificacao);
+ font-weight: normal;
+ text-align: left;
+}
+
+
+.legenda-siglas {
+  font-size: 10px;
+  color:var(--legenda-siglas-significado);
+  font-weight: bold;
+  text-align: left;
+}
+
+.legenda-significados {
+  font-size: 10px;
+  color:var(--legenda-siglas-significado);
+  font-weight: normal;
+  text-align: left;
+}
+
+
